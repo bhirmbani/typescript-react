@@ -8,16 +8,16 @@ module.exports = {
 	output: {
 		path: resolve(__dirname, 'build/'),
 		filename: '[name].js',
-		publicPath: '/'
+		publicPath: '/',
 	},
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.json']
+		extensions: ['.ts', '.tsx', '.js', '.json'],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'Babel + TypeScript + React = ❤️',
-			template: join(__dirname, 'public/index.html')
-		})
+			template: join(__dirname, 'public/index.html'),
+		}),
 	],
 	module: {
 		rules: [
@@ -25,8 +25,8 @@ module.exports = {
 				// Include ts, tsx, js, and jsx files.
 				test: /\.(ts|js)x?$/,
 				exclude: /node_modules/,
-				use: ['babel-loader']
-			}
-		]
-	}
-}
+				use: ['babel-loader'],
+			},
+		],
+	},
+};
