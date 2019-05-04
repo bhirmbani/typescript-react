@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "dev": "webpack-dev-server --progress --config webpack.config.development"
+		"dev": "webpack-dev-server --progress --config webpack.config.development",
+		"lint": "eslint . --ext .js,.tsx --fix"
   },
   "author": "bm",
   "license": "ISC",
