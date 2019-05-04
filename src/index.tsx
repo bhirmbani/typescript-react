@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 // const me = 2;
 
-function App() {
+export default function App(): JSX.Element {
 	return (
 		<div>
 			<p>test</p>
