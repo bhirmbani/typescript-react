@@ -16,7 +16,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Babel + TypeScript + React = ❤️',
+			title: 'React-Typescript',
 			template: join(__dirname, 'public/index.html'),
 		}),
 	],
